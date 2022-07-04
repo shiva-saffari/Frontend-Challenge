@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", "Fraunces", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+/**************************/
+/* BELOW 1440px (desktop) */
+/**************************/
+
+.section-cards {
+  background-color: hsl(30, 38%, 92%);
+  padding: 12.8rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50vw;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 9px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-box {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.card-heading {
+  font-family: Fraunces;
+  color: hsl(212, 21%, 14%);
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+span {
+  display: inline-block;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+}
+
+.sale-price {
+  font-family: Fraunces;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 3.2rem;
+}
+
+.former-price {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.purchase-box {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.purchase {
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem;
+  background-color: hsl(158, 36%, 37%);
+  text-decoration: none;
+  border-radius: 11px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  display: inline;
+}
+
+.purchase:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+/**************************/
+/* BELOW 375px (mobile) */
+/**************************/
+
+@media (max-width: 24em) {
+  .section-cards {
+    padding: 2rem;
+  }
+
+  .container {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr;
+  }
+
+  .text-box {
+    padding: 2.4rem;
+    gap: 2.4rem;
+  }
+
+  .subheading {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .card-heading {
+    font-size: 3rem;
+  }
+
+  .card-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .sale-price {
+    font-size: 3rem;
+    margin-right: 3.2rem;
+  }
+}
